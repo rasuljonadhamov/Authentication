@@ -1,13 +1,8 @@
-let btn = document.getElementById("btn");
-let input = document.getElementById("input");
-let list = document.getElementById("list");
+const nameInput = document.getElementById("username");
+const passwordInput = document.getElementById("password");
+const btn = document.getElementById("btn");
 
-btn.addEventListener("click", function () {
-  if (input.value) {
-    let item = document.createElement("li");
-    item.innerHTML = input.value;
-    list.appendChild(item);
-
-    input.value = "";
-  }
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("event");
 });
