@@ -10,17 +10,39 @@
     <div class="container">
       <h2 class="text-center">Login</h2>
       <br />
-      <form action="" class="loginForm">
+      <form action="/dashboard.html" class="loginForm" id="form">
         <div class="input-group">
           <label for="username" class="label">Username</label>
-          <input type="text" id="username" class="input" />
+          <input required type="text" id="username" class="input" />
           <span class="error-message"></span>
         </div>
         <br />
+
+        <div class="input-group">
+          <label for="username" class="label">Name</label>
+          <input id="username" type="text" id="username" class="input" />
+          <span class="error-message"></span>
+        </div>
+        <br />
+
+        <div class="input-group">
+          <label for="number" class="label">Age</label>
+          <input id="username" type="number" id="number" class="input" />
+          <span class="error-message"></span>
+        </div>
+        <br />
+
+        <div class="input-group">
+          <label for="language" class="label">Language</label>
+          <input required type="text" id="language" class="input" />
+          <span class="error-message"></span>
+        </div>
+        <br />
+
         <div class="input-group">
           <label for="password" class="label">Password</label>
-          <input type="password" id="password" class="input" />
-          <span class="error-message"></span>
+          <input type="" id="password" class="input" />
+          <span class="error-message1" id="message"></span>
         </div>
         <br />
         <button class="button" type="submit" id="btn">Login</button>
